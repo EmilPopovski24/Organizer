@@ -1,9 +1,10 @@
 
 
 export const Navigation = () => {
+
     return (
         <div className="navbar">
-            <ul className="navbat-ul">
+            <ul className="navbar-ul">
                 <li>Home</li>
                 <li>Login</li>
                 <li>Register</li>
@@ -12,4 +13,4 @@ export const Navigation = () => {
             </ul>
         </div>
     )
-}
+};
