@@ -1,5 +1,5 @@
 import { Router, Routes } from 'react-router-dom';
-import { Navigation } from './Navigation/Navigation';
+import { Navigation } from './components/Navigation/Navigation';
 
 function App() {
   return (
