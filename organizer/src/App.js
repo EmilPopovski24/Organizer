@@ -1,12 +1,10 @@
-import { Router, Routes,  } from 'react-router-dom';
+
 import { Navigation } from './Navigation/Navigation';
 
 function App() {
   return (
     <div className="App">
-        <Router>
-            <Navigation />
-        </Router>
+        <Navigation />
     </div>
   );
 }
