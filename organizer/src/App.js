@@ -5,6 +5,7 @@ import { Login } from './components/Login/Login';
 import { Register } from './components/Register/Register';
 import { Logout } from './components/Logout/Logout';
 import { Tasks } from './components/Tasks/Tasks';
+import { Profile } from './components/Profile/Profile';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
                   <Route path ="/register" element={<Register />} />
                   <Route path ="/logout" element={<Logout />} />
                   <Route path ="/tasks" element={<Tasks />} />
-                  <Route path ="/profile"/>
+                  <Route path ="/profile" element={<Profile />} />
               </Routes>
           </div>
     </div>
