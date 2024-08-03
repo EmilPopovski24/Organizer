@@ -1,15 +1,15 @@
-
+import "./Navigation.css";
 
 export const Navigation = () => {
 
     return (
         <div className="navbar">
             <ul className="navbar-ul">
-                <li>Home</li>
-                <li>Login</li>
-                <li>Register</li>
-                <li>Logout</li>
-                <li>Tasks</li>
+                <li className="navbar-li">Home</li>
+                <li className="navbar-li">Login</li>
+                <li className="navbar-li">Register</li>
+                <li className="navbar-li">Logout</li>
+                <li className="navbar-li">My Tasks</li>
             </ul>
         </div>
     )

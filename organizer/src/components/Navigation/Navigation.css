@@ -1,0 +1,15 @@
+.navbar {
+    margin:0;
+    height: 50px;
+    background-color: orange;
+}
+
+.navbar-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-li {
+    margin:10px;
+}
