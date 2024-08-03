@@ -10,6 +10,8 @@ export const Navigation = () => {
                 <li className="navbar-li"><Link to="/register">Register</Link></li>
                 <li className="navbar-li"><Link to="/logout">Logout</Link></li>
                 <li className="navbar-li"><Link to="/tasks">My Tasks</Link></li>
+                <li className="navbar-li"><Link to="/profile">My Profile</Link></li>
+                <li className="navbar-li"><Link to="/about">About</Link></li>
             </ul>
         </div>
     )
