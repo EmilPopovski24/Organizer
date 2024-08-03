@@ -6,6 +6,7 @@ import { Register } from './components/Register/Register';
 import { Logout } from './components/Logout/Logout';
 import { Tasks } from './components/Tasks/Tasks';
 import { Profile } from './components/Profile/Profile';
+import { About } from './components/About/About';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                   <Route path ="/logout" element={<Logout />} />
                   <Route path ="/tasks" element={<Tasks />} />
                   <Route path ="/profile" element={<Profile />} />
+                  <Route path ="/about" element={<About />} />
               </Routes>
           </div>
     </div>
