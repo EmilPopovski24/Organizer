@@ -6,4 +6,7 @@
     background-color: red;
     color: white;
     text-align: center;
+    overflow: hidden;
+    background-color: orange;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }

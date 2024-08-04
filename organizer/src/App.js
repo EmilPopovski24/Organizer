@@ -7,6 +7,7 @@ import { Logout } from './components/Logout/Logout';
 import { Tasks } from './components/Tasks/Tasks';
 import { Profile } from './components/Profile/Profile';
 import { About } from './components/About/About';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                   <Route path ="/about" element={<About />} />
               </Routes>
           </div>
+          <Footer />
     </div>
   );
 }
