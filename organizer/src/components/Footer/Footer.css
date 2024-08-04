@@ -1,11 +1,10 @@
 .footer {
-    position: fixed;
-    left: 0;
+    list-style-type: none;
+    margin: auto auto;
+    padding: 0;
     bottom: 0;
+    position: fixed;
     width: 100%;
-    color: white;
     text-align: center;
-    overflow: hidden;
     background-color: orange;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
