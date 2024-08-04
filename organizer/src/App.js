@@ -8,6 +8,7 @@ import { Tasks } from './components/Tasks/Tasks';
 import { Profile } from './components/Profile/Profile';
 import { About } from './components/About/About';
 import { Footer } from './components/Footer/Footer';
+import { NewTask } from './components/NewTask/NewTask';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                   <Route path ="/tasks" element={<Tasks />} />
                   <Route path ="/profile" element={<Profile />} />
                   <Route path ="/about" element={<About />} />
+                  <Route path ="/new-task" element={<NewTask />} />
               </Routes>
           </div>
           <Footer />
