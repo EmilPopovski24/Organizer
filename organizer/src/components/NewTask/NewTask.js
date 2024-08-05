@@ -2,11 +2,8 @@ import "./NewTask.css";
 
 export const NewTask = () => {
 
-
-
     return (
         <>
-        
             <section id ="create-page">
                 <form className="create" method="POST">
                     <h1 className='addNewTask'>Add New Task</h1>
