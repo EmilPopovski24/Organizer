@@ -9,8 +9,21 @@ import { Profile } from './components/Profile/Profile';
 import { About } from './components/About/About';
 import { Footer } from './components/Footer/Footer';
 import { NewTask } from './components/NewTask/NewTask';
+import { useEffect, useState } from 'react';
+import { taskService } from './services/taskService'
 
 function App() {
+
+  const [tasks, setTasks] = useState([]);
+
+useEffect(()=> {
+    taskService.getAll()
+      .then(result => {
+          console.log(result);
+          setTasks(result)
+      })
+},[])
+
   return (
     <div className="App">
         <Navigation />
@@ -20,7 +33,7 @@ function App() {
                   <Route path ="/login" element={<Login />} />
                   <Route path ="/register" element={<Register />} />
                   <Route path ="/logout" element={<Logout />} />
-                  <Route path ="/tasks" element={<Tasks />} />
+                  <Route path ="/tasks" element={<Tasks tasks={tasks} />} />
                   <Route path ="/profile" element={<Profile />} />
                   <Route path ="/about" element={<About />} />
                   <Route path ="/new-task" element={<NewTask />} />
