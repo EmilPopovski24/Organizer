@@ -24,6 +24,12 @@ useEffect(()=> {
       })
 },[])
 
+const onNewTaskSubmit = (taskData) => {
+    const result = taskService.addTask(taskData);
+    return result
+    // console.log(taskData)
+}
+
   return (
     <div className="App">
         <Navigation />
@@ -36,7 +42,7 @@ useEffect(()=> {
                   <Route path ="/tasks" element={<Tasks tasks={tasks} />} />
                   <Route path ="/profile" element={<Profile />} />
                   <Route path ="/about" element={<About />} />
-                  <Route path ="/new-task" element={<NewTask />} />
+                  <Route path ="/new-task" element={<NewTask onNewTaskSubmit={onNewTaskSubmit}/>} />
               </Routes>
           </div>
           <Footer />
