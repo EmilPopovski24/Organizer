@@ -10,7 +10,7 @@ import { About } from './components/About/About';
 import { Footer } from './components/Footer/Footer';
 import { NewTask } from './components/NewTask/NewTask';
 import { useEffect, useState } from 'react';
-import { taskService } from './services/taskService'
+import { taskService } from './services/taskService';
 
 function App() {
 
