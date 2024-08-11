@@ -13,7 +13,7 @@ export const request = async (method, url, data) => {
         }
     }
 
-    const response = fetch(url, options);
+    const response = await fetch(url, options);
 
     try {
         const result = await response.json();

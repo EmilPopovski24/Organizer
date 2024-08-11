@@ -24,9 +24,9 @@ useEffect(()=> {
       })
 },[])
 
-const onNewTaskSubmit = async(taskData) => {
+const onNewTaskSubmit = async (taskData) => {
     const newTask = await taskService.addTask(taskData);
-    return newTask
+    console.log(taskData)
  
 }
 
@@ -42,7 +42,7 @@ const onNewTaskSubmit = async(taskData) => {
                   <Route path ="/tasks" element={<Tasks tasks={tasks} />} />
                   <Route path ="/profile" element={<Profile />} />
                   <Route path ="/about" element={<About />} />
-                  <Route path ="/new-task" element={<NewTask onNewTaskSubmit={onNewTaskSubmit}/>} />
+                  <Route path ="/new-task" element={<NewTask onNewTaskSubmit={onNewTaskSubmit} />} />
               </Routes>
           </div>
           <Footer />

@@ -25,7 +25,7 @@ export const NewTask = ({
     return (
         <>
             <section id ="create-page">
-                <form className="create" method="POST" onSubmit={onSubmit}>
+                <form className="create" onSubmit={onSubmit}>
                     <h1 className='addNewTask'>Add New Task</h1>
 
                     <label htmlFor="task-name">Task Name</label>
