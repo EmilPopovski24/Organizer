@@ -24,10 +24,10 @@ useEffect(()=> {
       })
 },[])
 
-const onNewTaskSubmit = (taskData) => {
-    const result = taskService.addTask(taskData);
-    return result
-    // console.log(taskData)
+const onNewTaskSubmit = async(taskData) => {
+    const newTask = await taskService.addTask(taskData);
+    return newTask
+ 
 }
 
   return (
