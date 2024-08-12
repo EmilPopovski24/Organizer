@@ -18,7 +18,6 @@ export const NewTask = ({
 
     const onSubmit = (e) => {
         e.preventDefault();
-
         onNewTaskSubmit(values);
     }
 
