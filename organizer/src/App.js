@@ -1,11 +1,10 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import { Navigation } from './components/Navigation/Navigation';
 import { Home } from './components/Home/Home';
 import { Login } from './components/Login/Login';
 import { Register } from './components/Register/Register';
 import { Logout } from './components/Logout/Logout';
 import { Tasks } from './components/Tasks/Tasks';
-import { Profile } from './components/Profile/Profile';
 import { About } from './components/About/About';
 import { Footer } from './components/Footer/Footer';
 import { NewTask } from './components/NewTask/NewTask';
@@ -13,7 +12,7 @@ import { useEffect, useState } from 'react';
 import * as taskService from './services/taskService';
 
 function App() {
-
+  const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
 
 useEffect(()=> {
@@ -26,8 +25,9 @@ useEffect(()=> {
 
 const onNewTaskSubmit = async (taskData) => {
     const newTask = await taskService.addTask(taskData);
-    return newTask
-    // console.log(taskData)
+    setTasks(state => [...state, newTask]);
+    navigate('/tasks')
+    console.log(taskData)
 }
 
   return (
@@ -39,8 +39,7 @@ const onNewTaskSubmit = async (taskData) => {
                   <Route path ="/login" element={<Login />} />
                   <Route path ="/register" element={<Register />} />
                   <Route path ="/logout" element={<Logout />} />
-                  <Route path ="/tasks" element={<Tasks tasks={tasks} />} />
-                  <Route path ="/profile" element={<Profile />} />
+                  <Route path ="/tasks" element={<Tasks tasks={tasks} />} />>
                   <Route path ="/about" element={<About />} />
                   <Route path ="/new-task" element={<NewTask onNewTaskSubmit={onNewTaskSubmit} />} />
               </Routes>
