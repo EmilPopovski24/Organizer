@@ -26,8 +26,8 @@ useEffect(()=> {
 
 const onNewTaskSubmit = async (taskData) => {
     const newTask = await taskService.addTask(taskData);
-    console.log(taskData)
- 
+    return newTask
+    // console.log(taskData)
 }
 
   return (
