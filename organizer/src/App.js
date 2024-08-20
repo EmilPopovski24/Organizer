@@ -27,7 +27,7 @@ const onNewTaskSubmit = async (taskData) => {
     const newTask = await taskService.addTask(taskData);
     setTasks(state => [...state, newTask]);
     navigate('/tasks')
-    // console.log(taskData)
+    console.log(taskData)
 }
 
   return (

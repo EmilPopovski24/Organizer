@@ -1,4 +1,4 @@
-
+import './TaskItem.css';
 
 export const TaskItem = () => {
     return (

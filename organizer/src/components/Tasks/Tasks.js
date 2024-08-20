@@ -3,7 +3,7 @@ import { TaskItem } from "./TaskItem.js/TaskItem";
 export const Tasks = ({
     tasks
 }) => {
-
+    
     return (
         <>
             <h3>My Tasks</h3>
