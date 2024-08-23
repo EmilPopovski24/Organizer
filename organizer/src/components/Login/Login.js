@@ -1,7 +1,6 @@
 import "./Login.css";
 
-export const Login = () => {
-    
+export const Login = () => { 
     return (
         <>
         <div class="login">
