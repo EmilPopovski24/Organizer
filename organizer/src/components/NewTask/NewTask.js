@@ -20,7 +20,6 @@ export const NewTask = ({
         e.preventDefault();
         onNewTaskSubmit(values);
     }
-
     return (
         <>
             <section id ="create-page">
