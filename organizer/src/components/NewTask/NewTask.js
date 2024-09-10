@@ -16,10 +16,10 @@ export const NewTask = ({
         setValues(state => ({...state, [e.target.name]: e.target.value} ))
     }
 
-    // const onSubmit = (e) => {
-    //     e.preventDefault();
-    //     onNewTaskSubmit(values);
-    // }
+    const onSubmit = (e) => {
+        e.preventDefault();
+        onNewTaskSubmit(values);
+    }
     
     return (
         <>
