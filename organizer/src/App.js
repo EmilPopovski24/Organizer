@@ -16,13 +16,13 @@ function App() {
   const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
 
-// useEffect(()=> {
-//     taskService.getAll()
-//       .then(result => {
-//           console.log(result);
-//           setTasks(result)
-//       })
-// },[])
+useEffect(()=> {
+    taskService.getAll()
+      .then(result => {
+          console.log(result);
+          setTasks(result)
+      })
+},[])
 
 const onNewTaskSubmit = async (taskData) => {
     const newTask = await taskService.addTask(taskData);
