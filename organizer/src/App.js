@@ -48,4 +48,5 @@ const onNewTaskSubmit = async (taskData) => {
     </div>
   );
 }
+
 export default App;
