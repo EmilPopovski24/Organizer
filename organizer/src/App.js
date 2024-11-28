@@ -12,7 +12,6 @@ import { useEffect, useState } from 'react';
 import * as taskService from './services/taskService';
 
 function App() {
-  
   const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
 
