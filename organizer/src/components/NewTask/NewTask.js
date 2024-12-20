@@ -1,12 +1,11 @@
-import { useState } from "react";
-
 import "./NewTask.css";
+import { useForm } from "../../hooks/useForm";
 
 export const NewTask = ({
     onNewTaskSubmit
 }) => {
 
-    const [values, setValues] = useState({
+    const [values, setValues] = useForm({
         taskName: '',
         taskDescription: '',
         taskDate: '',
