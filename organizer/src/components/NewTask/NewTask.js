@@ -1,24 +1,18 @@
-import "./NewTask.css";
 import { useForm } from "../../hooks/useForm";
+
+import "./NewTask.css";
 
 export const NewTask = ({
     onNewTaskSubmit
 }) => {
 
-    const [values, setValues] = useForm({
+    const {values, onChangeHandler, onSubmit} = useForm({
         taskName: '',
         taskDescription: '',
         taskDate: '',
     })
 
-    const onChangeHandler = (e) => {
-        setValues(state => ({...state, [e.target.name]: e.target.value} ))
-    }
-
-    const onSubmit = (e) => {
-        e.preventDefault();
-        onNewTaskSubmit(values);
-    }
+   
     
     return (
         <>
