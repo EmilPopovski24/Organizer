@@ -5,7 +5,6 @@ import "./NewTask.css";
 export const NewTask = ({
     onNewTaskSubmit
 }) => {
-
     const {values, onChangeHandler, onSubmit} = useForm({
         taskName: '',
         taskDescription: '',
