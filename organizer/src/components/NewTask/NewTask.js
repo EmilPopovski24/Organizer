@@ -9,7 +9,7 @@ export const NewTask = ({
         taskName: '',
         taskDescription: '',
         taskDate: '',
-    })
+    }, onNewTaskSubmit)
 
    
     
