@@ -40,7 +40,7 @@ const onNewTaskSubmit = async (taskData) => {
                   <Route path ="/login" element={<Login />} />
                   <Route path ="/register" element={<Register />} />
                   <Route path ="/logout" element={<Logout />} />
-                  <Route path ="/tasks" element={<Tasks tasks={tasks} />} />>
+                  <Route path ="/tasks" element={<Tasks tasks={tasks} />} />
                   <Route path ="/about" element={<About />} />
                   <Route path ="/new-task" element={<NewTask onNewTaskSubmit={onNewTaskSubmit} />} />
               </Routes>
