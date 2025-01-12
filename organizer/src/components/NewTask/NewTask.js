@@ -11,8 +11,7 @@ export const NewTask = ({
         taskDate: '',
     }, onNewTaskSubmit)
 
-   
-    
+
     return (
         <>
             <section id ="create-page">
