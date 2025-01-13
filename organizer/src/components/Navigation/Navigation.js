@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./Navigation.css";
 
 export const Navigation = () => {
+
     return (
         <div className="navbar">
             <ul className="navbar-ul">
